@@ -1,0 +1,49 @@
+{
+  "name": "Web",
+  "dockerComposeFile": [
+    "../docker-compose.yml",
+    "docker-compose.yml"
+  ],
+  "service": "web",
+  "workspaceFolder": "/workspace",
+  "settings": {
+		"editor.codeActionsOnSave": {
+			"source.fixAll": true,
+			"source.organizeImports": true
+		},
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+		"editor.formatOnSave": true,
+		"editor.rulers": [
+			80,
+			120
+		],
+		"editor.tabSize": 2,
+		"eslint.alwaysShowStatus": true,
+		"eslint.codeAction.showDocumentation": {
+			"enable": true
+		},
+		"eslint.format.enable": true,
+		"files.insertFinalNewline": true,
+		"files.trimTrailingWhitespace": true,
+		"[markdown]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode",
+			"editor.formatOnSave": true,
+			"editor.wordWrap": "on",
+		},
+		"prettier.proseWrap": "always",
+		"search.useIgnoreFiles": false
+  },
+  "extensions": [
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint",
+    "dkundel.vscode-new-file",
+    "dongido.sync-env",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "formulahendry.terminal",
+    "sleistner.vscode-fileutils",
+    "tyriar.sort-lines",
+    "steoates.autoimport",
+    "graphql.vscode-graphql"
+  ],
+}
