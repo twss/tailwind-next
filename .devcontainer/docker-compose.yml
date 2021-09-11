@@ -1,15 +1,13 @@
 version: '3'
 services:
-  web:
+  next:
     user: "node:node"
     build:
-      args:
-        AMPLIFY_CLI_VERSION: '5.3.0'
       context: .
       dockerfile: .devcontainer/Dockerfile
     volumes:
-      - .:/workspace
-      - web-node_modules:/workspace/node_modules
+      - .:/workspace:cached
+      - next-node_modules:/workspace/node_modules
 
       # Uncomment the next line to use Docker from inside the container. See https://aka.ms/vscode-remote/samples/docker-from-docker-compose for details.
       # - /var/run/docker.sock:/var/run/docker.sock
@@ -24,4 +22,4 @@ services:
     command: /bin/sh -c "while sleep 1000; do :; done"
 
 volumes:
-  web-node_modules:
+  next-node_modules:
